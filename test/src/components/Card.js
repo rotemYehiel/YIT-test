@@ -4,9 +4,7 @@ const Card = (props) => {
     const { card, currCategory } = props;
     return (
         <div className="card">
-            <div className="container">
-                <img className="imgArea" src={card.imgSrc} alt="card img" />
-            </div>
+            <div className="imgArea" style={{ backgroundImage: `url(${card.imgSrc})` }}></div>
             <div className="category" id="text-start" style={{ backgroundColor: currCategory.color }}>
                 <span>{card.category}</span>
             </div>
